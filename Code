@@ -1,0 +1,11 @@
+# Imports
+from nltk.chat.util import Chat, reflections
+
+pairs = [
+    ['my name is (.*)',['hi %1']],
+    ['hi|hello|hey|hola|morning|', ['hey there', 'how are you', 'what up', 'howdy']]
+]
+
+# reflections is a dictionary
+chat = Chat(pairs, reflections)
+chat.converse()
